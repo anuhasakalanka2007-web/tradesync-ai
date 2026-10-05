@@ -5,7 +5,7 @@ import google.generativeai as genai
 st.set_page_config(page_title="TradeSync AI - Export Matchmaker", page_icon="🌐", layout="centered")
 
 # 2. API Key සැකසීම (මෙහි ඔයාගේ Gemini Key එක ඇතුළත් කරන්න)
-GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+GEMINI_API_KEY = st.secrets["KEY_PART1"] + st.secrets["KEY_PART2"]
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 
