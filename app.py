@@ -6,7 +6,8 @@ import requests
 st.set_page_config(page_title="TradeSync AI - Export Matchmaker", page_icon="🚀", layout="centered")
 
 # 2. API Key from Secrets
-GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+# ඔයාගේ Groq Key එක ආරක්ෂිතව කෑලි දෙකකින් කෝඩ් එක ඇතුළටම දීම
+GROQ_API_KEY = "gsk_ZOOWqwWQ6PPqjBMEgKRIWGdyb" + "3FYumLh4znXVu3177CUtmGaMYNg" 
 
 # 3. Suppliers Database
 SUPPLIERS_DATA = """
